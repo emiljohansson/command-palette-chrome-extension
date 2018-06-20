@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Command Palette",
+  "version": "0.0.0",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "main.js",
+      "youTube/index.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Append Test Text"
+  },
+  "commands": {
+    "command-palette": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Comma",
+        "mac": "Command+Shift+Comma"
+      },
+      "description": "Opens command palette"
+    }
+  }
+}
